@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+       font-family: Helvetica, sans-serif;
+       background: #E41E39;
+      }
+      .event {
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+      }
+      #countdown {
+       width: 462px;
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%) rotate(-45deg);
+       padding: 0;
+       list-style: none;
+      }
+
+      #countdown li {
+       display: table;
+       text-align: center;
+       float: left;
+       background: #fff;
+       margin: 2px;
+       width: 150px;
+       height: 150px;
+      }
+
+      #countdown li:nth-child(3) {
+       clear: left;
+       margin-left: 156px;
+      }
+
+      #countdown li div {
+       transform: rotate(45deg);
+       display: table-cell;
+       vertical-align: middle;
+      }
+
+      #countdown li div span {
+       display: block;
+       font-size: 3rem;
+       color: #323031;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="event">
+      <h2>PauSiber Tanışma Etkinliği</h2>
+      </div>
+    <ul id="countdown"></ul>
+  </body>
+  <script>
+    (function countdown(){
+       var launch_date = new Date (Date.parse("Sep 25, 2017 17:17:17 GMT +3"));
+       var now = new Date();
+       var days; var hours; var minutes; var seconds; var rest;
+
+       seconds = rest = Math.floor(((launch_date.getTime() - now.getTime()) / 1000));
+
+       days = zero (Math.floor(seconds / 86400));
+       seconds -= days * 86400;
+
+       hours = zero (Math.floor(seconds / 3600));
+       seconds -= hours * 3600;
+
+       minutes = zero (Math.floor(seconds / 60));
+       seconds -= minutes * 60;
+
+       seconds = zero (Math.floor(seconds));
+
+       function zero(n){
+          return (n < 10 ? '0' : false) + n;
+       }
+
+       rest <= 0 ? days = hours = minutes = seconds = '00' : setTimeout(countdown, 1000);
+       document.getElementById('countdown').innerHTML =
+          '<li><div><span>' + days +'</span>Gün</div></li>'
+          +'<li><div><span>' + hours +'</span>Saat</div></li>'
+          +'<li><div><span>' + minutes +'</span>Dakika</div></li>'
+          +'<li><div><span>' + seconds +'</span>Saniye</div></li>';
+      })();
+  </script>
+</html>
