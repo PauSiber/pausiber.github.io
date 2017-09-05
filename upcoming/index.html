@@ -53,40 +53,27 @@
   </head>
   <body>
     <div class="event">
-      test
       <h2>PauSiber Tanışma Etkinliği</h2>
       </div>
     <ul id="countdown"></ul>
   </body>
   <script>
-    (function countdown(){
-       var launch_date = new Date (Date.parse("Sep 25, 2017 17:17:17"));
-       var now = new Date();
-       alert(launch_date);
-       var days; var hours; var minutes; var seconds; var rest;
+      const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-       seconds = rest = Math.floor(((launch_date - now) / 1000));
+      let countDown = new Date('Sep 28, 2017 17:17:17').getTime(),
+      x = setInterval(function() {
 
-       days = zero (Math.floor(seconds / 86400));
-       seconds -= days * 86400;
+      let now = new Date().getTime(),
+      distance = countDown - now;
 
-       hours = zero (Math.floor(seconds / 3600));
-       seconds -= hours * 3600;
-
-       minutes = zero (Math.floor(seconds / 60));
-       seconds -= minutes * 60;
-
-       seconds = zero (Math.floor(seconds));
-       function zero(n){
-          return (n < 10 ? '0' : false) + n;
-       }
-
-       rest <= 0 ? days = hours = minutes = seconds = '00' : setTimeout(countdown, 1000);
-       document.getElementById('countdown').innerHTML =
-          '<li><div><span>' + days +'</span>Gün</div></li>'
-          +'<li><div><span>' + hours +'</span>Saat</div></li>'
-          +'<li><div><span>' + minutes +'</span>Dakika</div></li>'
-          +'<li><div><span>' + seconds +'</span>Saniye</div></li>';
-      })();
+      document.getElementById('countdown').innerHTML =
+        ( '<li><div><span>' + Math.floor(distance / (day)) +'</span>Gün</div></li>'
+         +'<li><div><span>' + Math.floor((distance % (day)) / (hour)) +'</span>Saat</div></li>'
+         +'<li><div><span>' + Math.floor((distance % (hour)) / (minute)) +'</span>Dakika</div></li>'
+         +'<li><div><span>' + Math.floor((distance % (minute)) / second) +'</span>Saniye</div></li>'
+     )}, second)
   </script>
 </html>
