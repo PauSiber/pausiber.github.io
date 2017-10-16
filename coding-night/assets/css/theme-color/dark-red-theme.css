@@ -1,0 +1,95 @@
+
+
+/*=======================================
+Template Design By MarkUps	
+Author URI : http://www.markups.io/
+========================================*/
+
+.mu-hero-overlay,
+.mu-video-overlay {
+	background-color: #970001;/* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #970001);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #970001); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.mu-primary-btn:hover,
+.mu-primary-btn:focus,
+.mu-copy-right a:hover,
+.mu-copy-right a:focus,
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus,
+.mu-faq-content .panel-title a:hover,
+.mu-faq-content .panel-title a:focus,
+.mu-faq-content .panel-title a[aria-expanded="true"],
+.mu-faq-content .panel-title a>span,
+.mu-menu ul li a:hover,
+.mu-menu ul li a:focus,
+.mu-single-speakers-info p,
+.mu-single-speakers-social li a:hover,
+.mu-single-speakers-social li a:focus,
+.mu-logo,
+.mu-logo:hover,
+.mu-logo:focus,
+#mu-hero .navbar-default .navbar-brand,
+.mu-navbar .mu-menu li a:hover,
+.mu-navbar .mu-menu li a:focus,
+.mu-single-event .mu-event-time {
+	color: #970001;
+}
+
+.mu-speakers-slider .slick-next,
+.mu-speakers-slider .slick-prev,
+#mu-venue,
+.mu-popular-price .mu-price-tag,
+.mu-navbar .navbar-toggle,
+.mu-navbar .navbar-toggle:hover,
+.mu-navbar .navbar-toggle:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover,
+.mu-schedule-menu li a:hover,
+.mu-schedule-menu li a:focus,
+.mu-schedule-menu li.active a,
+.mu-schedule-menu li.active a:hover,
+.mu-schedule-menu li.active a:focus {
+	background-color: #970001;
+}
+
+.mu-social-media a:hover,
+.mu-social-media a:focus {
+	border: 1px solid #970001;
+	color: #970001;
+}
+
+.mu-contact-form .form-control:focus,
+.mu-schedule-menu li a {
+	border: 1px solid #970001;    
+} 
+
+.mu-send-msg-btn,
+.mu-register-btn:hover,
+.mu-register-btn:focus,
+.mu-popular-price .mu-register-btn {
+	border: 1px solid #970001;
+	background-color: #970001;
+}
+
+.mu-faq-content .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #970001;
+
+}
+
+.mu-reg-submit-btn:hover,
+.mu-reg-submit-btn:focus {
+	background-color: #970001;
+	border: 2px solid #970001;
+}
+
+.mu-faq-content .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #970001;
+
+}
+
+
+
