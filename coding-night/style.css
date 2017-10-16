@@ -1067,9 +1067,11 @@ button:focus {
 
 .mu-reg-submit-btn {
 	background-color: transparent;
-	border: 2px solid #fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	border: 3px solid #fff;
 	color: #fff;
-	padding: 12px 75px;
+	padding: 36px 150px;
 	margin-top: 20px;
 	letter-spacing: 1px;
 	-webkit-transition: all 0.5s;
@@ -1320,7 +1322,7 @@ button:focus {
 .mu-footer-area{
 	display: inline;
 	float: left;
-	padding: 30px 0;
+	padding: 30px ;
 	text-align: center;
 	width: 100%;
 }
@@ -1339,8 +1341,6 @@ button:focus {
 }
 
 .mu-social-media a {
-	border: 1px solid #19191a;
-	border-radius: 50px;
 	color: #19191a;
 	display: inline-block;
 	font-size: 12px;
@@ -1351,7 +1351,6 @@ button:focus {
 	width: 10%;
 	height: 20%;
 	line-height: 50px;
-	font-size: 40px;
 }
 
 .mu-footer-bottom {
@@ -1366,10 +1365,10 @@ button:focus {
 
 .mu-copy-right a {
 	font-weight: 600;
-	-webkit-transition: all 0.5s;
+	/*-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-}
+*/}
 
 
 
@@ -1457,7 +1456,8 @@ button:focus {
 	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event::before {
 		right: auto;
 		left: -16px;
-		border-width: 8px 16px 8px 0;
+
+		-width: 8px 16px 8px 0;
 		border-color: transparent #fff transparent transparent;
 	}
 

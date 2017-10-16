@@ -1,6 +1,6 @@
 
 /*=======================================
-Template Design By MarkUps	
+Template Design By MarkUps
 Author URI : http://www.markups.io/
 ========================================*/
 
@@ -44,8 +44,8 @@ Author URI : http://www.markups.io/
 .mu-navbar .navbar-toggle,
 .mu-navbar .navbar-toggle:hover,
 .mu-navbar .navbar-toggle:focus,
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover,
 .mu-schedule-menu li a:hover,
 .mu-schedule-menu li a:focus,
@@ -57,14 +57,13 @@ Author URI : http://www.markups.io/
 
 .mu-social-media a:hover,
 .mu-social-media a:focus {
-	border: 1px solid #EE3268;
 	color: #EE3268;
 }
 
 .mu-contact-form .form-control:focus,
 .mu-schedule-menu li a {
-	border: 1px solid #EE3268;    
-} 
+	border: 1px solid #EE3268;
+}
 
 .mu-send-msg-btn,
 .mu-send-msg-btn:focus,
