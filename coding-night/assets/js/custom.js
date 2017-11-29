@@ -44,10 +44,10 @@
 
 	$('#mu-event-counter').countdown('2017/12/02').on('update.countdown', function(event) {
 	  var $this = $(this).html(event.strftime(''
-	    + '<span class="mu-event-counter-block"><span>%D</span> Days</span> '
-	    + '<span class="mu-event-counter-block"><span>%H</span> Hours</span> '
-	    + '<span class="mu-event-counter-block"><span>%M</span> Mins</span> '
-	    + '<span class="mu-event-counter-block"><span>%S</span> Secs</span>'));
+	    + '<span class="mu-event-counter-block"><span>%D</span> Gün</span> '
+	    + '<span class="mu-event-counter-block"><span>%H</span> Saat</span> '
+	    + '<span class="mu-event-counter-block"><span>%M</span> Dakika</span> '
+	    + '<span class="mu-event-counter-block"><span>%S</span> Saniye</span>'));
 	});
 
 
