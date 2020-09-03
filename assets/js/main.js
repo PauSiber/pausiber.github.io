@@ -31,3 +31,14 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+let scrollButtons = document.querySelectorAll('.scrollto');
+
+scrollButtons.forEach((button) => {
+    let refId = button.attributes.getNamedItem('href').value.substring(1);
+    button.addEventListener('click', () => {
+        document.getElementById(refId).scrollIntoView({ block: 'start',  behavior: 'smooth'});
+    })
+});
+
+
