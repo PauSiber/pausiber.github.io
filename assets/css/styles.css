@@ -414,8 +414,8 @@ pre code {
 /* ======= Contact Section ======= */
 .contact {
   padding: 80px 0;
-  background: #17baef;
-  color: #fff;
+  background: #fff;
+  color: #eebf3f;
 }
 .contact .contact-inner {
   max-width: 760px;
@@ -521,7 +521,7 @@ pre code {
 }
 .contact .social-icons a {
   display: inline-block;
-  background: #0c86ae;
+  /* background: #e6ad14; */
   width: 48px;
   height: 48px;
   text-align: center;
@@ -538,7 +538,7 @@ pre code {
   float: left;
 }
 .contact .social-icons a:hover {
-  background: #e6ad14;
+  background: #eebf3f;
 }
 .contact .social-icons a .fa {
   color: #fff;
