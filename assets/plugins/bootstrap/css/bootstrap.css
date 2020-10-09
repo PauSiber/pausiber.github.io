@@ -4325,6 +4325,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 130px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
