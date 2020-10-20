@@ -1,10 +1,22 @@
-# Kendi bölümünüzü eklemeniz için;
+# Pausiber Slayt
+> **https://pausiber.xyz/slayt/**
 
+## Kendi bölümünüzü eklemek için;
+
+https://github.com/PauSiber/pausiber.github.io reposunu fork edip [PR](https://github.com/PauSiber/pausiber.github.io/pulls) gönderin.  
+**NOT:** Kişiler alfabetik sıra ile listelenmektedir.
+
+Örnek commit mesajları
 ```
-git clone git@github.com:barisesen/pausiber.git ~/Desktop/pausiber;
-cd ~/Desktop/pausiber/tanisma-etkinliği;
+  Add isim soyisim's info
+```
+ya da
+```
+  Update isim soyisim's info
+```
+
+## Kendi biligisayarınızda ön izlemek için
+```
 python -m SimpleHTTPServer 8000;
 ```
-
-Tarayıcınızdan http://localhost:8000 'e giderek halihazırda çalışan sunumu görebilirsiniz.
-Kendi bölümünüzü ekleyip göndermeniz beklenmekte
+Tarayıcınızdan http://localhost:8000 'e giderek sunumu önizleyebilirsiniz.
