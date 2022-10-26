@@ -8,8 +8,9 @@
 */
 /* Default */
 /* ======= Base ======= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 body {
-  font-family: 'Lato', arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #17baef;
 }
@@ -42,7 +43,7 @@ a.btn {
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-  font-family: 'Montserrat', arial, sans-serif;
+  font-family: "Montserrat", arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold;
 }
@@ -119,9 +120,11 @@ pre code {
 }
 .header .logo a {
   color: #fff;
+  transition: 0.2s all ease-in-out;
 }
 .header .logo a:hover {
   text-decoration: none;
+  filter: brightness(1.05);
 }
 .header .main-nav button {
   background: #074f66;
@@ -147,7 +150,7 @@ pre code {
 .header .main-nav .nav .nav-item {
   font-weight: normal;
   margin-right: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .header .main-nav .nav .nav-item.active a {
   color: #17baef;
@@ -161,10 +164,12 @@ pre code {
   -o-transition: none;
   font-size: 14px;
   padding: 15px 10px;
+  transition: 0.2s all ease-in-out;
 }
 .header .main-nav .nav .nav-item a:hover {
   color: #074f66;
   background: none;
+  filter: contrast(1.4);
 }
 .header .main-nav .nav .nav-item a:focus {
   outline: none;
@@ -520,12 +525,13 @@ pre code {
   margin-right: 0;
 }
 .contact .social-icons a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   /* background: #e6ad14; */
   width: 48px;
   height: 48px;
-  text-align: center;
-  padding-top: 12px;
+  font-size: 24px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -547,6 +553,12 @@ pre code {
   font-size: 26px;
   text-align: center;
   padding: 0;
+}
+.contact.dark-mode .social-icons a {
+  color: #10b2e7;
+}
+.contact.dark-mode .social-icons a:hover {
+  color: #053c4e;
 }
 /* ======= Footer ======= */
 .footer {
@@ -613,10 +625,9 @@ pre code {
   }
 }
 
-section{
+section {
   scroll-margin-top: 79px;
 }
-
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
