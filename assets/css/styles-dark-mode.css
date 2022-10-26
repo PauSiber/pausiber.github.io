@@ -1,0 +1,52 @@
+.dark-mode-btn {
+  position: fixed;
+  bottom: 64px;
+  right: 32px;
+  z-index: 999;
+  background: #292929;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all ease-in-out;
+}
+
+/* .dark-mode-btn #sunIcon {
+  display: none;
+}
+
+.dark-mode-btn #moonIcon {
+  display: block;
+} */
+
+.dark-mode {
+  background: #292929;
+  color: #fff;
+}
+
+.dark-mode-btn .dark-mode-icon {
+  transition: 0.3s all ease-in-out;
+  width: 3rem;
+  height: 3rem;
+  filter: invert(1);
+}
+
+.dark-mode .navbar-fixed-top {
+  transition: 0.3s all ease-in-out;
+  background: #11c3fc;
+}
+
+section.dark-mode .title,
+section.dark-mode .sub-title {
+  transition: 0.3s all ease-in-out;
+  color: #11c3fc !important;
+}
+
+section.dark-mode .docs-inner {
+  transition: 0.3s all ease-in-out;
+  background-color: #292929;
+}
