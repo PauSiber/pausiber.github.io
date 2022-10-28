@@ -28,6 +28,11 @@
   color: #fff;
 }
 
+.dark-mode-blue {
+  background: #074f66;
+  color: #fff;
+}
+
 .dark-mode-btn .dark-mode-icon {
   transition: 0.3s all ease-in-out;
   width: 3rem;
@@ -37,7 +42,30 @@
 
 .dark-mode .navbar-fixed-top {
   transition: 0.3s all ease-in-out;
-  background: #11c3fc;
+  background: #074f66;
+}
+
+.dark-mode .navbar-fixed-top .container nav .navbar-collapse ul li a svg {
+  transition: 0.3s all ease-in-out;
+  color: #11c3fc !important;
+}
+
+section#neler-yapariz.dark-mode-blue .text-center .title,
+section#neler-yapariz.dark-mode-blue .text-center ul li {
+  color: #fff;
+}
+
+section#promo.dark-mode-blue .title,
+section#twitter.dark-mode-blue .title {
+  color: #17baef;
+}
+
+section#promo.dark-mode-blue .meta a {
+  color: #ffffff99;
+}
+
+section#promo.dark-mode-blue .meta a:hover {
+  color: #fff;
 }
 
 section.dark-mode .title,
