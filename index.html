@@ -1,402 +1,609 @@
 <!DOCTYPE html>
-<html lang="tr">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+  <!--<![endif]-->
+
   <head>
-    <title>PaüSiber | Pamukkale Üniversitesi Siber Topluluğu</title>
+    <title>PaüSiber | Pamukkale Üniversitesi Siber Topluluğu</title>
+    <!-- Meta -->
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Siber güvenlik farkındalığı oluşturma ve ülkenin ihtiyacı olan nitelikli iş gücünü üretme güdüsüyle birleşmiş insan topluluğuyuz."
     />
-    <meta name="keywords" content="paü, siber, etkinlik, event, cyber, feedback" />
-    <meta name="robots" content="index,follow" />
+    <meta
+      name="keywords"
+      content="paü, siber, etkinlik, event, cyber, feedback"
+    />
+    <meta name="robot" content="index,follow" />
     <meta name="author" content="PaüSiber" />
     <meta name="language" content="tr" />
-    <meta name="theme-color" content="#0a0e1a" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pausiber.xyz/" />
-    <meta property="og:site_name" content="PaüSiber" />
-    <meta property="og:title" content="PaüSiber | Pamukkale Üniversitesi Siber Topluluğu" />
+    <meta itemprop="name" content="Pau Siber" />
     <meta
-      property="og:description"
+      itemprop="description"
       content="Siber güvenlik farkındalığı oluşturma ve ülkenin ihtiyacı olan nitelikli iş gücünü üretme güdüsüyle birleşmiş insan topluluğuyuz."
     />
     <meta
-      property="og:image"
-      content="https://res.cloudinary.com/cagatayc/image/upload/c_scale,w_315/newpausiber.fw_yibd6x.png"
+      itemprop="image"
+      content="http://res.cloudinary.com/cagatayc/image/upload/c_scale,w_315/newpausiber.fw_yibd6x.png"
     />
-    <meta property="og:image:width" content="315" />
-    <meta property="og:image:height" content="315" />
-
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="PaüSiber" />
     <meta name="twitter:site" content="@SiberPau" />
-    <meta name="twitter:creator" content="@SiberPau" />
     <meta name="twitter:title" content="PaüSiber" />
     <meta
       name="twitter:description"
       content="Siber güvenlik farkındalığı oluşturma ve ülkenin ihtiyacı olan nitelikli iş gücünü üretme güdüsüyle birleşmiş insan topluluğuyuz."
     />
+    <meta name="twitter:creator" content="@SiberPau" />
     <meta
-      name="twitter:image"
-      content="https://res.cloudinary.com/cagatayc/image/upload/c_scale,w_315/newpausiber.fw_yibd6x.png"
+      name="twitter:image:src"
+      content="http://res.cloudinary.com/cagatayc/image/upload/c_scale,w_315/newpausiber.fw_yibd6x.png"
     />
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#0a0e1a" />
-    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- Facebook -->
+    <meta itemprop="name" content="PaüSiber" />
+    <meta
+      itemprop="image"
+      content="http://res.cloudinary.com/cagatayc/image/upload/c_scale,w_315/newpausiber.fw_yibd6x.png"
+    />
+    <meta property="og:url" content="http://pausiber.xyz/" />
+    <meta property="og:title" content="PaüSiber" />
+    <meta
+      property="og:description"
+      content="Siber güvenlik farkındalığı oluşturma ve ülkenin ihtiyacı olan nitelikli iş gücünü üretme güdüsüyle birleşmiş insan topluluğuyuz."
+    />
+    <meta property="og:site_name" content="PaüSiber" />
+    <meta
+      property="og:image"
+      content="http://res.cloudinary.com/cagatayc/image/upload/c_scale,w_315/newpausiber.fw_yibd6x.png"
+    />
+    <meta property="og:image:width" content="315" />
+    <meta property="og:image:height" content="315" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Global CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css" />
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      id="dark-mode"
+      rel="stylesheet"
+      href="./assets/css/styles-dark-mode.css"
+    />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
-  <body>
-    <!-- ===== Header ===== -->
-    <header class="site-header" id="site-header">
+  <body data-spy="scroll">
+    <header id="header" class="header">
       <div class="container">
-        <nav class="nav" aria-label="Ana navigasyon">
-          <a class="brand" href="#hero" aria-label="PaüSiber ana sayfa">
-            <img class="brand-logo" src="/slayt/images/pausiber-logo-ana-grup.png" alt="PaüSiber" width="44" height="44" />
+        <h1 class="logo pull-left">
+          <a class="scrollto" href="#promo">
+            <span class="logo-title">
+              <img
+                src="https://res.cloudinary.com/cagatayc/image/upload/c_scale,w_480/v1471386794/newpausiber.fw_yibd6x.png"
+                alt="Paü Siber"
+                style="height: 51px; margin-top: -10px"
+              />
+            </span>
           </a>
-
-          <ul class="nav-links" id="nav-links">
-            <li><a href="#hakkimizda">Hakkımızda</a></li>
-            <li><a href="#neler-yapariz">Çalışmalar</a></li>
-            <li><a href="#etkinlikler">Etkinlikler</a></li>
-            <li><a href="#twitter">Sosyal</a></li>
-            <li><a href="#contact">İletişim</a></li>
-          </ul>
-
-          <button class="nav-toggle" id="nav-toggle" aria-label="Menü" aria-expanded="false" aria-controls="nav-links">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
+        </h1>
+        <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+          <div class="navbar-header">
+            <button
+              class="navbar-toggle"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul
+              class="nav navbar-nav"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+              "
+            >
+              <li class="active nav-item sr-only">
+                <a class="scrollto" href="#promo"
+                  ><b style="color: #074f66" class="fa fa-home fa-2x nav"></b
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="scrollto" href="#hakkimizda"
+                  ><b style="color: #074f66" class="fa fa-info-circle fa-2x"></b
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="scrollto" href="#neler-yapariz"
+                  ><b
+                    style="color: #074f66"
+                    class="fa fa-question-circle fa-2x"
+                  ></b
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="scrollto" href="#etkinlikler"
+                  ><b style="color: #074f66" class="fa fa-calendar fa-2x"></b
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="scrollto" href="#twitter"
+                  ><i style="color: #074f66" class="fab fa-twitter fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class=""
+                  href="https://www.youtube.com/channel/UCCwfbMmxhRkUqWyHWt5uwCw"
+                  target="_blank"
+                  ><i style="color: #074f66" class="fab fa-youtube fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="https://t.me/siberpau" target="_blank"
+                  ><i style="color: #074f66" class="fab fa-telegram fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="https://discord.gg/dUwa68F" target="_blank"
+                  ><i style="color: #074f66" class="fab fa-discord fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item last">
+                <a class="scrollto" href="#contact"
+                  ><i style="color: #074f66" class="fa fa-sign-in-alt fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
-    <!-- ===== Hero ===== -->
-    <section class="hero" id="hero">
-      <div class="hex-bg" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <span class="hero-eyebrow">Pamukkale Üniversitesi · Siber Topluluğu · Denizli</span>
-          <h1>Paü<span class="accent">Siber</span></h1>
-          <p class="hero-tagline">
-            Siber güvenliği öğrenen, üreten ve paylaşan öğrencilerden oluşan
-            topluluğuz. Atölyeler, yayınlar ve projelerle birlikte gelişiyoruz.
-          </p>
-          <span class="hero-hint">Yandaki terminale <b>help</b> yazarak bizi keşfet.</span>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="https://discord.gg/dUwa68F" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.65 12.65 0 0 0-.617-1.249.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.371-.291a.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.119.099.245.198.372.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg>
-              Bize Katıl
-            </a>
-            <a class="btn btn-ghost" href="https://github.com/PauSiber" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.01-.01-1.99-3.2.7-3.87-1.54-3.87-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.89-.39.98 0 1.97.13 2.89.39 2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.13 0 1.54-.01 2.78-.01 3.16 0 .31.21.68.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/></svg>
-              GitHub'da Bul
-            </a>
-          </div>
-        </div>
-
-        <div class="console" id="console">
-          <div class="console-bar">
-            <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
-            <div class="title"><b>~/pausiber</b> — bash</div>
-            <div class="spacer"></div>
-          </div>
-          <div class="console-body">
-            <div class="scrollback" id="scrollback"></div>
-            <div class="inp-row">
-              <span class="prompt-frag" aria-hidden="true"><span class="g">root</span><span class="d">@</span><span class="b">pausiber</span><span class="d">:</span><span class="a">~</span><span class="d">$</span></span>
-              <input id="cmdInput" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="komut yaz... (örn: help)" aria-label="Terminal komutu" />
-            </div>
-            <div class="chips" id="chips"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Kimiz? ===== -->
-    <section class="section" id="hakkimizda">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">// 01_kimiz</span>
-          <h2>Kimiz?</h2>
-          <p>
-            Özünde gece gündüz bir şeyler öğrenmeye, insanlığa yarar sağlayacak
-            çıkarımlarda bulunmaya çalışan insanlarız.
-          </p>
-        </div>
-
-        <div class="cards-grid">
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
-              </svg>
-            </div>
-            <h3>İstek</h3>
-            <p>İş bitirmeye yönelik isteğimiz ve tutkumuz bizi gece gündüz ayakta tutuyor.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <h3>Zaman</h3>
-            <p>Her zaman bir uğraş içerisindeyiz ve kesinlikle boşa değil.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <circle cx="12" cy="12" r="6"/>
-                <circle cx="12" cy="12" r="2"/>
-              </svg>
-            </div>
-            <h3>Hedef Odaklı</h3>
-            <p>Uğraştığımız işler hedef odaklı; kesin sonuç almadan bırakmıyoruz.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                <line x1="12" y1="18" x2="12.01" y2="18"/>
-              </svg>
-            </div>
-            <h3>Mobil & Web</h3>
-            <p>Kendimiz için birkaç mobil ve web uygulaması yazıyoruz.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="16 18 22 12 16 6"/>
-                <polyline points="8 6 2 12 8 18"/>
-              </svg>
-            </div>
-            <h3>Kod</h3>
-            <p>Kodlamayı çok seviyoruz; sürekli yeni şeyler keşfediyoruz.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-                <line x1="6" y1="2" x2="6" y2="4"/>
-                <line x1="10" y1="2" x2="10" y2="4"/>
-                <line x1="14" y1="2" x2="14" y2="4"/>
-              </svg>
-            </div>
-            <h3>Kahve</h3>
-            <p>Kahvesiz yapamıyoruz — uzun geceleri o güçle sürdürüyoruz.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Neler Yapıyoruz (Terminal) ===== -->
-    <section class="section features" id="neler-yapariz">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">// 02_neler-yapariz</span>
-          <h2>Neler Yapıyoruz?</h2>
-          <p>Her gün yeni bir şey deniyor, paylaşıyor ve birbirimizden öğreniyoruz.</p>
-        </div>
-
-        <ol class="wwd-list">
-          <li class="wwd-item">
-            <div class="wwd-num">01</div>
-            <div class="wwd-body">
-              <div class="wwd-head">
-                <h3>Öğreniyoruz</h3>
-                <span class="wwd-tag">// learn</span>
-              </div>
-              <ul class="wwd-points">
-                <li>Ders çalışıyor, blog okuyup yazıyoruz.</li>
-                <li>Discord üzerinden <b>pair programming</b> yapıyoruz.</li>
-                <li>Linux dağıtımlarını günlük olarak kullanıyoruz.</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="wwd-item">
-            <div class="wwd-num">02</div>
-            <div class="wwd-body">
-              <div class="wwd-head">
-                <h3>Üretiyoruz</h3>
-                <span class="wwd-tag">// build</span>
-              </div>
-              <ul class="wwd-points">
-                <li>Kendi <b>mobil &amp; web</b> uygulamalarımızı yazıyoruz.</li>
-                <li><b>Git &amp; GitHub</b> ile kod versiyonluyoruz.</li>
-                <li>Hedef odaklı projelerimizi sonuna kadar götürüyoruz.</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="wwd-item">
-            <div class="wwd-num">03</div>
-            <div class="wwd-body">
-              <div class="wwd-head">
-                <h3>Paylaşıyoruz</h3>
-                <span class="wwd-tag">// share</span>
-              </div>
-              <ul class="wwd-points">
-                <li>Eğitimler ve <b>yarışmalar</b> düzenliyoruz.</li>
-                <li><b>YouTube</b> üzerinden online etkinlikler yapıyoruz.</li>
-                <li>Yeni gelenleri ekibe katıp birlikte yetişiyoruz.</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="wwd-item">
-            <div class="wwd-num">04</div>
-            <div class="wwd-body">
-              <div class="wwd-head">
-                <h3>Hayatta Kalıyoruz</h3>
-                <span class="wwd-tag">// fuel</span>
-              </div>
-              <ul class="wwd-points">
-                <li>Goygoyu seviyoruz ama görevimizi de yapıyoruz.</li>
-                <li>Kahvesiz yapamıyoruz; uzun geceleri onunla kapatıyoruz.</li>
-                <li>Uyumuyoruz — kod yazılacaksa o kahve sıcakken yazılır.</li>
-              </ul>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ===== Etkinlikler ===== -->
-    <section class="section" id="etkinlikler">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">// 03_etkinlikler</span>
-          <h2>Etkinliklerimiz</h2>
-          <p>Geçmiş ve gelecek etkinliklerimize göz atın.</p>
-        </div>
-
-        <div class="events-frame">
-          <iframe src="/slayt/" title="PaüSiber Etkinlikleri" loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Twitter ===== -->
-    <section class="section" id="twitter">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">// 04_sosyal-medya</span>
-          <h2>Sosyal Medyada Biz</h2>
-          <p>En güncel haberlerimiz için bizi Twitter'da takip edin.</p>
-        </div>
-
-        <div class="social-card">
-          <a
-            class="twitter-timeline"
-            data-height="500"
-            data-dnt="true"
-            data-theme="dark"
-            data-link-color="#22d3ee"
-            data-chrome="noheader nofooter transparent"
-            href="https://twitter.com/SiberPau"
-            >Tweets by SiberPau</a
-          >
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Contact ===== -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <span class="section-tag">// 05_iletisim</span>
-        <h2>Bize Katıl!</h2>
-        <p>
-          Birlikte öğrenmeyi, üretmeyi ve geliştirmeyi seviyorsan aramızda yer al.
-          Aşağıdaki kanallardan bize ulaşabilirsin.
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+      <div class="container text-center">
+        <h2 class="title">Paü<span class="highlight">Siber</span></h2>
+        <p class="intro">
+          Siber güvenlik farkındalığı oluşturma ve ülkenin ihtiyacı olan
+          nitelikli iş gücünü üretme güdüsüyle birleşmiş insan topluluğuyuz.
         </p>
 
-        <ul class="social-icons">
+        <ul class="meta list-inline">
           <li>
-            <a href="https://github.com/PauSiber" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.01-.01-1.99-3.2.7-3.87-1.54-3.87-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.89-.39.98 0 1.97.13 2.89.39 2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.13 0 1.54-.01 2.78-.01 3.16 0 .31.21.68.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/></svg>
-            </a>
+            <a href="https://github.com/PauSiber" target="_blank">
+              <span class="fab fa-github"></span> Github'da bizi bulun!</a
+            >
           </li>
           <li>
-            <a href="https://twitter.com/SiberPau" target="_blank" rel="noopener" aria-label="Twitter / X">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21.5l-7.5 8.566L23 22h-6.84l-5.36-6.99L4.5 22H1.244l8.04-9.18L1 2h7.01l4.84 6.39L18.244 2Zm-2.4 18h1.86L7.27 4H5.31l10.534 16Z"/></svg>
-            </a>
+            <a
+              href="https://www.youtube.com/channel/UCCwfbMmxhRkUqWyHWt5uwCw"
+              target="_blank"
+            >
+              <span class="fab fa-youtube"></span> Canlı yayınlarımıza
+              katılın!</a
+            >
+          </li>
+        </ul>
+        <!--//meta-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//promo-->
+
+    <section id="hakkimizda" class="about section">
+      <div class="container">
+        <h2 class="title text-center">Kimiz?</h2>
+        <p class="intro text-center">
+          Özünde gece gündüz birşeyler öğrenmeye, insanlığa yarar sağlayacak
+          çıkarımlarda bulunmaya çalışan insanlarız.
+        </p>
+        <div class="row">
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">İstek</h3>
+              <p>
+                İş bitirmeye yönelik isteğimiz ve tutkumuz bizi gece gündüz
+                ayakta tutuyor!
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-clock"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Zaman</h3>
+              <p>Her zaman bir uğraş içerisindeyiz ve kesinlikle boşa değil!</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-crosshairs"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Hedef Odaklı</h3>
+              <p>
+                Uğraştığımız işler hedef odaklı ve kesin sonuçlar elde etmeden
+                bırakmıyoruz!
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="clearfix visible-md"></div>
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-tablet"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Mobil</h3>
+              <p>Kendimiz için birkaç mobil & web uygulama yazıyoruz!</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-code"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Kod</h3>
+              <p>Kodlamayı çok seviyoruz!</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-coffee"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Kahve</h3>
+              <p>Kahvesiz yapamıyoruz</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//about-->
+
+    <section id="neler-yapariz" class="features section">
+      <div class="container text-center">
+        <h2 class="title">Neler yapıyoruz?</h2>
+        <ul class="feature-list list-unstyled">
+          <li><i class="fa fa-check"></i> Kendi işimizi yapıyoruz.</li>
+          <li><i class="fa fa-check"></i> Eğitimler düzenliyoruz.</li>
+          <li><i class="fa fa-check"></i> Git & Github kullanıyoruz.</li>
+          <li><i class="fa fa-check"></i> Blog yazıyoruz.</li>
+          <li>
+            <i class="fa fa-check"></i> Evet goygoyu biz de seviyoruz ama
+            görevlerimizi de yapıyoruz.
           </li>
           <li>
-            <a href="https://t.me/siberpau" target="_blank" rel="noopener" aria-label="Telegram">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
-            </a>
+            <i class="fa fa-check"></i> Kendi aramızda ufak
+            etkinlikler/yarışmalar düzenliyoruz.
+          </li>
+          <li><i class="fa fa-check"></i> Ders çalışıyoruz.</li>
+          <li>
+            <i class="fa fa-check"></i> Linux dağıtımlarını kullanıyoruz.
+            <span class="fab fa-linux"></span>
           </li>
           <li>
-            <a href="https://discord.gg/dUwa68F" target="_blank" rel="noopener" aria-label="Discord">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.65 12.65 0 0 0-.617-1.249.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.371-.291a.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.119.099.245.198.372.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg>
-            </a>
+            <i class="fa fa-check"></i> Katılacak arkadaşları birazcık
+            hırpalıyoruz.
+          </li>
+          <li><i class="fa fa-check"></i> Uyumuyoruz.</li>
+          <li>
+            <i class="fa fa-check"></i> Youtube üzerinden online etkinlikler
+            yapıyoruz.
           </li>
           <li>
-            <a href="https://www.instagram.com/pausiber/" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCCwfbMmxhRkUqWyHWt5uwCw" target="_blank" rel="noopener" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.13-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.37.56A3.02 3.02 0 0 0 .5 6.2C0 8.07 0 12 0 12s0 3.93.5 5.8a3.02 3.02 0 0 0 2.13 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.37-.56a3.02 3.02 0 0 0 2.13-2.14c.5-1.87.5-5.8.5-5.8s0-3.93-.5-5.8ZM9.6 15.6V8.4l6.24 3.6L9.6 15.6Z"/></svg>
-            </a>
+            <i class="fa fa-check"></i> Discord üzerinden pair programming
+            yapıyoruz.
           </li>
         </ul>
       </div>
+      <!--//container-->
+    </section>
+    <!--//features-->
+
+    <section id="etkinlikler" class="docs section">
+      <div class="container text-center">
+        <h2 class="title">Etkinliklerimiz</h2>
+        <div class="docs-inner">
+          <div class="block">
+            <iframe
+              src="/slayt/"
+              width="100%"
+              height="100%"
+              style="height: 450px"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== Footer ===== -->
-    <footer class="site-footer">
-      <div class="container">
-        <p class="footer-brand">
-          <b>./pausiber</b> — Pamukkale Teknokent · HackerSpace
-        </p>
-        <p class="footer-meta">
-          <span id="year"></span> &copy; PaüSiber — siberguvenlik.local
-        </p>
+    <section id="twitter" class="features section">
+      <div class="container text-center">
+        <h2 class="title">Sosyal Medyada Biz</h2>
+        <!-- <a class="twitter-timeline" data-width="800" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/SiberPau">Tweets by SiberPau</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+        <a
+          class="twitter-timeline"
+          data-height="500"
+          data-dnt="true"
+          data-theme="light"
+          data-link-color="#eebf3f"
+          href="https://twitter.com/SiberPau"
+          >Tweets by PaüSiber</a
+        >
+        <script
+          async
+          src="//platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </div>
-    </footer>
+    </section>
 
-    <script src="/assets/js/main.js"></script>
+    <!-- <section id="katilmak-icin" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+                <h2 class="title text-center">Bize katılmak için</h2>
+                <div class="block">
+
+                    <h3 class="sub-title text-center">HTML</h3>
+
+                    <div class="code-block">
+                        <pre><code class="language-markup">
+    &ltp class="my-style"&gt
+      Hello World!
+    &lt/p&gt
+                     </code></pre>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h3 class="sub-title text-center">CSS</h3>
+
+                    <div class="code-block">
+                        <pre>
+    <code class="language-css">
+    body {
+      font-family: 'Lato', arial, sans-serif;
+      color: #444444;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    </code>
+  </pre>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h3 class="sub-title text-center">JavaScript</h3>
+                    <div class="code-block">
+                        <pre><code class="language-javascript">
+    if ( awesome ) {
+        console.log('This is Awesome');
+    } else {
+        $('body').addClass('give-me-awesome');
+    }
+                    </code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ******CONTACT****** -->
+    <section id="contact" class="contact section has-pattern">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="clearfix"></div>
+          <div class="info text-center">
+            <h4 class="sub-title">Bize katıl!</h4>
+            <ul class="social-icons list-inline">
+              <li class="last">
+                <a href="https://github.com/PauSiber" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="last">
+                <a href="https://twitter.com/SiberPau" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="last">
+                <a href="https://t.me/siberpau" target="_blank"
+                  ><i class="fab fa-telegram"></i
+                ></a>
+              </li>
+              <li class="last">
+                <a href="https://discord.gg/dUwa68F" target="_blank"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </li>
+              <li class="last">
+                <a href="https://www.instagram.com/pausiber/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="last">
+                <a
+                  href="https://www.youtube.com/channel/UCCwfbMmxhRkUqWyHWt5uwCw"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!--//info-->
+        </div>
+        <!--//contact-inner-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//contact-->
+
+    <div class="dark-mode-btn">
+      <!-- <i id="moonIcon" class="fas fa-moon"></i>
+      <i id="sunIcon" class="fas fa-sun"></i> -->
+      <img
+        class="dark-mode-icon"
+        src="./assets/icons/eclipse.svg"
+        alt="eclipse-icon"
+      />
+    </div>
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+      <div class="container text-center">
+        <small class="copyright">
+          Pamukkale Teknokent - HackerSpace <i class="fa fa-anchor"></i
+        ></small>
+      </div>
+      <!--//container-->
+    </footer>
+    <!--//footer-->
+
+    <!-- Javascript -->
+    <script src="./assets/js/dark-mode.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery-1.11.3.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery.easing.1.3.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/fontawesome/js/all.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>
