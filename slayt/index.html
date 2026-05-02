@@ -22,6 +22,74 @@
   <link rel="stylesheet" href="lib/css/zenburn.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
+
+  <style>
+    .reveal .retirees-title {
+      margin: -18px 0 12px;
+      color: #ffc000;
+    }
+
+    .reveal .retirees-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto 28px;
+    }
+
+    .reveal .retiree-card {
+      display: grid;
+      grid-template-columns: 154px minmax(0, 1fr);
+      gap: 16px;
+      min-height: 186px;
+      padding: 14px;
+      box-sizing: border-box;
+      text-align: left;
+      border: 1px solid rgba(255, 192, 0, 0.34);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .reveal .retiree-photo {
+      width: 154px;
+      height: 158px;
+      object-fit: cover;
+      border: 0 !important;
+      border-radius: 6px;
+      margin: 0 !important;
+      background: none !important;
+      box-shadow: none !important;
+    }
+
+    .reveal .retiree-name {
+      margin: 0 0 8px;
+      color: #fff;
+      font-size: 0.62em;
+      line-height: 1.08;
+    }
+
+    .reveal .retiree-contact {
+      display: grid;
+      gap: 4px;
+      color: #ddd;
+      font-size: 0.31em;
+      line-height: 1.2;
+    }
+
+    .reveal .retiree-contact span {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .reveal .retiree-contact i {
+      width: 16px;
+      margin-right: 5px;
+      color: #ffc000;
+      text-align: center;
+    }
+  </style>
+
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement('link');
@@ -617,1297 +685,517 @@
       <!-- Emekliler -->
       <section>
         <section data-background="" data-background-size="contain">
-          <h2><span style="color:#ffc000">Emekliler</h2>
+          <h2><span style="color:#ffc000">Emekliler</span></h2>
           <img src="images/pausiber-logo-emekliler.png" alt="pausiber-logo-emekliler.png" width="250px"
             style="border: 0 !important; background: none !important; box-shadow: none;">
         </section>
-      </section>
-
-      <!-- Abdülsamet Aydınhan -->
-      <section>
-        <section data-background="/slayt/images/abdulsamet_aydinhan.jpeg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Abdülsamet </span>Aydınhan</h2>
+        <section>
+          <h2 class="retirees-title">Emekliler</h2>
+          <div class="retirees-grid">
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/abdulsamet_aydinhan.jpeg" alt="Abdülsamet Aydınhan fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Abdülsamet Aydınhan</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-telegram"></i> @sametaydinhan</span>
+                  <span><i class="fa fa-github"></i> @sametaydinhan</span>
+                  <span><i class="fa fa-instagram"></i> @samet_aydinhan</span>
+                  <span><i class="fa fa-linkedin-square"></i> @sametaydinhan</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/alp_eren.jpg" alt="Alp Eren IŞIK fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Alp Eren IŞIK</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-linkedin-square"></i> @isikerenalp</span>
+                  <span><i class="fa fa-github"></i> @isikerenalp</span>
+                  <span><i class="fa fa-twitter"></i> @isik_erenalp</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/altay_simsek.jpg" alt="Altay Simsek fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Altay Simsek</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @altay.simsekk</span>
+                  <span><i class="fa fa-github"></i> @altaysimsek</span>
+                  <span><i class="fa fa-twitter"></i> @altitans</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/aykut_sahinler.jpg" alt="Aykut Şahinler fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Aykut Şahinler</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @aykutsahinler</span>
+                  <span><i class="fa fa-github"></i> @aykutsahinler</span>
+                  <span><i class="fa fa-codepen"></i> @aykutsahinler</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/baris_esen.jpg" alt="Barış ESEN fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Barış ESEN</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @barisesen_dev</span>
+                  <span><i class="fa fa-github"></i> @barisesen</span>
+                  <span><i class="fa fa-envelope-open"></i> iletisim@barisesen.com</span>
+                  <span><i class="fa fa-globe"></i> https://barisesen.com</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/batineryilmaz.jpg" alt="Batın Eryılmaz fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Batın Eryılmaz</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @batin.eryilmaz</span>
+                  <span><i class="fa fa-github"></i> @batin</span>
+                  <span><i class="fa fa-envelope-open"></i> batineryilmaz@icloud.com</span>
+                  <span><i class="fa fa-globe"></i> batin.dev</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+          </div>
         </section>
         <section>
-          <h2 style="color:#ffc000">Abdülsamet Aydınhan Kimdir?</h2>
-          <blockquote>
-            &ldquo;Web teknolojilerine meraklı ve yeni şeyleri denemeyi seven biri.&rdquo;
-          </blockquote>
+          <h2 class="retirees-title">Emekliler</h2>
+          <div class="retirees-grid">
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/bernavrl.jpg" alt="Berna Varol fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Berna Varol</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @berna_varoll</span>
+                  <span><i class="fa fa-github"></i> @brrna</span>
+                  <span><i class="fa fa-telegram"></i> @bernavarol</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/beyza_kaynar.jpg" alt="Beyza Kaynar fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Beyza Kaynar</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @kaynarbeyzaa</span>
+                  <span><i class="fa fa-instagram"></i> @kaynarbeyza</span>
+                  <span><i class="fa fa-github"></i> @kaynarbeyzaa</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/boratanrikulu.jpg" alt="Bora Tanrıkulu fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Bora Tanrıkulu</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @boratanrikulu_</span>
+                  <span><i class="fa fa-github"></i> @boratanrikulu</span>
+                  <span><i class="fa fa-globe"></i> boratanrikulu.dev</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/c2.jpg" alt="Çağatay ÇALI fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Çağatay ÇALI</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @cagataycali</span>
+                  <span><i class="fa fa-github"></i> @cagataycali</span>
+                  <span><i class="fa fa-envelope-open"></i> cagataycali@icloud.com</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/deniz_ok.jpeg" alt="Deniz Ök fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Deniz Ök</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-telegram"></i> @denizok2020</span>
+                  <span><i class="fa fa-github"></i> @DenizOk20</span>
+                  <span><i class="fa fa-instagram"></i> @denizok2020</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/duruaydogdu.jpg" alt="Duru Aydoğdu fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Duru Aydoğdu</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @druaydogdu</span>
+                  <span><i class="fa fa-twitter"></i> @druaydogdu</span>
+                  <span><i class="fa fa-linkedin-square"></i> @duruaydogdu</span>
+                  <span><i class="fa fa-github"></i> @duruaydogdu</span>
+                  <span><i class="fa fa-telegram"></i> @duruaydogdu</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+          </div>
         </section>
         <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>JavaScript</li>
-          <li>ReactJS</li>
-          <li>Front-End Teknolojileri</li>
-          <li>PHP</li>
-          <li>Laravel</li>
+          <h2 class="retirees-title">Emekliler</h2>
+          <div class="retirees-grid">
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/elifbihter2.jpg" alt="Elif Bihter Kuşçu fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Elif Bihter Kuşçu</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @bihterkuscu</span>
+                  <span><i class="fa fa-github"></i> @bihterkuscu</span>
+                  <span><i class="fa fa-telegram"></i> @BihterKuscu</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/elifnur_bulut.jpg" alt="Elifnur Bulut fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Elifnur Bulut</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-github"></i> @elifbulut</span>
+                  <span><i class="fa fa-instagram"></i> @el.bulut</span>
+                  <span><i class="fa fa-linkedin-square"></i> @elifnurbulut</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/eneskaya.jpeg" alt="Enes Kaya fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Enes Kaya</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-github"></i> @eneskaya12</span>
+                  <span><i class="fa fa-instagram"></i> @enskayaa_</span>
+                  <span><i class="fa fa-twitter"></i> @eneskay_</span>
+                  <span><i class="fa fa-telegram"></i> @eneskaya25</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/emrullahcirit.jpg" alt="Emrullah Cirit fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Emrullah Cirit</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @Iamemrullah</span>
+                  <span><i class="fa fa-github"></i> @emrullahcirit</span>
+                  <span><i class="fa fa-instagram"></i> @emrullah.cirit</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/erdem_oflaz.jpg" alt="Erdem OFLAZ fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Erdem OFLAZ</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-facebook"></i> e2d3m</span>
+                  <span><i class="fa fa-github"></i> erdemoflaz</span>
+                  <span><i class="fa fa-envelope-open"></i> info@erdemoflaz.com</span>
+                  <span><i class="fa fa-heart"></i> erdemoflaz.com</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/farukozdemir.jpg" alt="Faruk Özdemir fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Faruk Özdemir</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @fozdemir16</span>
+                  <span><i class="fa fa-github"></i> @fozdemir16</span>
+                  <span><i class="fa fa-telegram"></i> @fozdemir16</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+          </div>
         </section>
         <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-telegram fa-2x"> @sametaydinhan</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-github fa-2x"> @sametaydinhan </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-instagram fa-2x"> @samet_aydinhan </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-linkedin-square fa-2x"> @sametaydinhan </i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Alp Eren IŞIK -->
-      <section>
-        <section data-background="/slayt/images/alp_eren.jpg" data-background-size="contain">
-          <h2><span style="color:#ffc000"> Alp </span>Eren<span style="color:#ffc000"> IŞIK </span></h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Alp Eren IŞIK Kimdir?</h2>
-          <blockquote>
-            &ldquo;Siber Güvenlik Sevdalısı, Linux aşığı, Eğitmen, PaüSiber Temsilcisi.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Cyber Security</li>
-          <li>PHP</li>
-          <li>Python</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-linkedin-square fa-2x">@isikerenalp</i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x">@isikerenalp</i> &nbsp;&nbsp;
-              <i class="fa fa-twitter fa-2x">@isik_erenalp</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-
-      <!-- Altay Simsek -->
-      <section>
-        <section data-background="/slayt/images/altay_simsek.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Altay </span>Şimşek</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Altay Şimşek Kimdir?</h2>
-          <blockquote>
-            &ldquo;Formula1 izlemeyi ve takip etmeyi seven,front-end teknolojilerine ilgi duyan kişi.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>NodeJS</li>
-          <li>ReactJS</li>
-          <li>JavaScript</li>
-          <li>Grafik Tasarım</li>
-          <li>Video Kurgu/Düzenleme</li>
-          <li>Front-End Teknolojileri</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @altay.simsekk</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @altaysimsek</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-twitter fa-2x"> @altitans</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Aykut Şahinler -->
-      <section>
-        <section data-background="/slayt/images/aykut_sahinler.jpg" data-background-size="contain">
-          <h2 style="margin-top:-360px"><span style="color:#ffc000"> Aykut </span>Şahinler</h2>
+          <h2 class="retirees-title">Emekliler</h2>
+          <div class="retirees-grid">
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/feyzaedaturk.jpg" alt="Feyza Eda Türk fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Feyza Eda Türk</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @feyzaedaturk</span>
+                  <span><i class="fa fa-github"></i> @feyzaeda</span>
+                  <span><i class="fa fa-instagram"></i> @fetfeyzaeda</span>
+                  <span><i class="fa fa-linkedin-square"></i> @feyzaedaturk</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/yusa_karababa.jpg" alt="Feyzi Yuşa KARABABA fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Feyzi Yuşa KARABABA</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @fykarababa</span>
+                  <span><i class="fa fa-github"></i> @Fykarababa</span>
+                  <span><i class="fa fa-envelope-open"></i> yusakarababa@gmail.com</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/furkandolunay.jpg" alt="Furkan Dolunay fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Furkan Dolunay</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @makerologist_</span>
+                  <span><i class="fa fa-github"></i> @Makerologist0</span>
+                  <span><i class="fa fa-instagram"></i> @makerologist_</span>
+                  <span><i class="fa fa-linkedin-square"></i> @furkan-dolunay</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/gurkan_sen.jpg" alt="Gürkan ŞEN fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Gürkan ŞEN</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @gurkansenn</span>
+                  <span><i class="fa fa-github"></i> @gurkansen</span>
+                  <span><i class="fa fa-envelope-open"></i> gurkan.sen35@gmail.com</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/hamdiye_kaya.jpeg" alt="Hamdiye Kaya fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Hamdiye Kaya</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-github"></i> @hamdiye</span>
+                  <span><i class="fa fa-envelope-open"></i> hamdyekaya@gmail.com</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/hasantezcan.jpg" alt="Hasan Tezcan fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Hasan Tezcan</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> hasantezcann</span>
+                  <span><i class="fa fa-github"></i> hasantezcan</span>
+                  <span><i class="fa fa-youtube"></i> hasantezcan</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+          </div>
         </section>
         <section>
-          <h2 style="color:#ffc000">Aykut Şahinler Kimdir?</h2>
-          <blockquote>
-            &ldquo;Frontend Dev,<br>Adalı, Otel Sahibi&rdquo;
-          </blockquote>
+          <h2 class="retirees-title">Emekliler</h2>
+          <div class="retirees-grid">
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/havvanurdurudeniz.JPG" alt="Havva Nur Durudeniz fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Havva Nur Durudeniz</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-github"></i> @hdrdnz</span>
+                  <span><i class="fa fa-instagram"></i> @havvanurdrdnz</span>
+                  <span><i class="fa fa-telegram"></i> @havvanurdrdnz</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/hazalsilayaprak.jpg" alt="Hazal Sıla Yaprak fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Hazal Sıla Yaprak</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @hazalsilayaprak</span>
+                  <span><i class="fa fa-github"></i> @hazalsilayaprak</span>
+                  <span><i class="fa fa-instagram"></i> @hazalsilayaprak</span>
+                  <span><i class="fa fa-gitlab"></i> @hazalsilayaprak</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/isinnur_gunay.jpg" alt="Işınnur Günay fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Işınnur Günay</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @isinnurgunay</span>
+                  <span><i class="fa fa-github"></i> @isinnur</span>
+                  <span><i class="fa fa-telegram"></i> @isinnur</span>
+                  <span><i class="fa fa-linkedin-square"></i> @isinnurgunay</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/ilknurdogan.jpg" alt="İlknur Doğan fotoğrafı">
+              <div>
+                <h3 class="retiree-name">İlknur Doğan</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-github"></i> @ilknurdgn</span>
+                  <span><i class="fa fa-linkedin-square"></i> @ilknurdogan</span>
+                  <span><i class="fa fa-instagram"></i> @ilknur.ddogan_</span>
+                  <span><i class="fa fa-twitter"></i> ddilknurdgn</span>
+                  <span><i class="fa fa-telegram"></i> @ilknurdgn</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/mehmet_yuceoz.jpg" alt="Mehmet Rahmi YüceöZ fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Mehmet Rahmi YüceöZ</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-telegram"></i> @MrYcz</span>
+                  <span><i class="fa fa-instagram"></i> @yuceozmehmet</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/murat-tanriverdi.jpg" alt="Murat Tanrıverdi fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Murat Tanrıverdi</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-twitter"></i> @muratcandev</span>
+                  <span><i class="fa fa-github"></i> @murattanriverdi</span>
+                  <span><i class="fa fa-instagram"></i> @muratcan.tanriverdi</span>
+                  <span><i class="fa fa-linkedin-square"></i> @murat-tanriverdi</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+          </div>
         </section>
         <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>Java (144)</li>
-          <li>Okçuluk</li>
-          <li>Kart Numaraları</li>
-          <li>LOTR <3 </li>
+          <h2 class="retirees-title">Emekliler</h2>
+          <div class="retirees-grid">
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/onurozbay.jpg" alt="Onur Özbay fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Onur Özbay</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @onurozbay7</span>
+                  <span><i class="fa fa-telegram"></i> @onurozbay7</span>
+                  <span><i class="fa fa-github"></i> @onurozbay7</span>
+                  <span><i class="fa fa-twitter"></i> @ozzieonur</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/osman-emre-omurlu.jpg" alt="Osman Emre Ömürlü fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Osman Emre Ömürlü</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> oe.omurlu</span>
+                  <span><i class="fa fa-linkedin-square"></i> oemurlu</span>
+                  <span><i class="fa fa-twitter"></i> oemurlu</span>
+                  <span><i class="fa fa-github"></i> oemurlu</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/omerfarukbirgul.jpg" alt="Ömer Faruk Birgül fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Ömer Faruk Birgül</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @omer_f_birgul</span>
+                  <span><i class="fa fa-github"></i> @Omar-f-Birgul</span>
+                  <span><i class="fa fa-telegram"></i> @omar_f_birgul</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/remzi_dalyan.jpg" alt="Remzi Dalyan fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Remzi Dalyan</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-github"></i> RemziDalyan</span>
+                  <span><i class="fa fa-telegram"></i> remzidalyan</span>
+                  <span><i class="fa fa-envelope-open"></i> rdalyan@outlook.com</span>
+                  <span><i class="fa fa-envelope-open"></i> remzidalyan@icloud.com</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/semanur_ozkan.jpg" alt="Semanur Özkan fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Semanur Özkan</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @sema.ozkan_</span>
+                  <span><i class="fa fa-github"></i> @semaozkan</span>
+                  <span><i class="fa fa-telegram"></i> @semanurozkan</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/serdarkis.jpg" alt="Serdar Kış fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Serdar Kış</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-telegram"></i> @Serdarks</span>
+                  <span><i class="fa fa-github"></i> @serdarkis</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+          </div>
         </section>
         <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @aykutsahinler</i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @aykutsahinler</i> &nbsp;&nbsp;
-              <i class="fa fa-codepen fa-2x"> @aykutsahinler</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Barış ESEN -->
-      <section>
-        <section data-background="/slayt/images/baris_esen.jpg" data-background-size="contain">
-          <h2><span style="color:#ffc000">Barış </span>ESEN</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Barış Esen Kimdir?</h2>
-          <blockquote>
-            &ldquo;Kendi öğrendiğim bilgileri, diğer kişilerle paylaşmayı seviyorum. Yeni şeyler öğrenmeye
-            bayılıyorum.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Web Uygulamaları</li>
-          <li>Mobil Uygulamaları</li>
-          <li>Real-time uygulamalar</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @barisesen_dev</i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @barisesen</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-envelope-open fa-2x"> iletisim@barisesen.com</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-globe fa-2x"> https://barisesen.com</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Batın Eryılmaz -->
-      <section>
-        <section data-background="/slayt/images/batineryilmaz.jpg" data-background-size="contain">
-          <h2 style="margin-top:-360px"><span style="color:#ffc000"> Batın </span>ERYILMAZ</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Batın Eryılmaz Kimdir?</h2>
-          <blockquote>
-            &ldquo;Software Engineer @<span style="font-family: -webkit-pictograph;">Trendyol</span> ,
-            <br>
-            Ex: Leo AR, Kommunity, MojiLaLa
-            <br> Apple Fan Boy,
-            <br>Alışveriş, daha çok alışveriş&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>React.js</li>
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>TDD</li>
-          <li>Arduino</li>
-          <li>Alışveriş</li>
-          <li>Rainbow Six Siege</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @batin.eryilmaz</i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @batin</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-envelope-open fa-2x"> batineryilmaz@icloud.com</i> &nbsp;&nbsp;
-            </small>
-            <br>
-            <br>
-            <small>
-              <i class="fa fa-globe fa-2x"> batin.dev </i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Berna Varol -->
-      <section>
-        <section data-background="/slayt/images/bernavrl.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Berna </span>Varol</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Berna Varol Kimdir?</h2>
-          <blockquote>
-            &ldquo;Yeniliğe açık, farklı şeyleri denemeyi seven biriyim.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>React Native</li>
-          <li>Kitap</li>
-          <li>Podcast</li>
-          <li>Dizi</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @berna_varoll</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @brrna</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @bernavarol</i><br> &nbsp;&nbsp; <br>
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Beyza Kaynar -->
-      <section>
-        <section data-background="/slayt/images/beyza_kaynar.jpg" data-background-size="contain">
-          <h2 style="margin-top:600px"> Beyza <span style="color:#ffc000">Kaynar</span></h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Beyza Kaynar Kimdir?</h2>
-          <blockquote>
-            &ldquo;Juliet, İzmir Güzeli, Karambit&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Mobil Uygulama Geliştirme</li>
-          <li>React native</li>
-          <li>Proje Yönetimi</li>
-          <li>Robotik 🤖</li>
-          <li>Tenis 🎾</li>
-          <li>Tiyatro ❤️</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @kaynarbeyzaa</i> &nbsp;&nbsp;
-              <i class="fa fa-instagram fa-2x"> @kaynarbeyza</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-github fa-2x"> @kaynarbeyzaa</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Bora Tanrıkulu -->
-      <section>
-        <section data-background="/slayt/images/boratanrikulu.jpg" data-background-size="contain">
-          <h2 style="margin-top:-260px"><span style="color:#ffc000"> Bora </span>Tanrıkulu</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Bora Tanrıkulu Kimdir?</h2>
-          <blockquote>
-            &ldquo;Kendini geliştirmeye çalışan bir insan.&rdquo;
-          </blockquote>
-          <a href="https://boratanrikulu.dev/">boratanrikulu.dev</a>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Golang</li>
-          <li>Cloud Servisleri</li>
-          <li>Shell Scripting, Cli Uygulamaları</li>
-          <li>GNU/Linux Sistem Yönetimi</li>
-          <li>DevOps</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @boratanrikulu_</i>&nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @boratanrikulu</i>&nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-globe fa-2x"> boratanrikulu.dev</i>&nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Çağatay ÇALI -->
-      <section>
-        <section data-background="/slayt/images/c2.jpg" data-background-size="contain">
-          <h2><span style="color:#ffc000">Çağatay </span>ÇALI</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Çağatay Çalı Kimdir?</h2>
-          <blockquote>
-            &ldquo;Açık kaynağı seven ve destekleyen birisiyim, insanları açık kaynak geliştiriciliği konusunda
-            heveslendirmek mottosuyla hareket ediyorum.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Açık kaynak kod geliştiriciliği</li>
-          <li>Siber güvenlik</li>
-          <li>Güvenli kod yazma</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @cagataycali</i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @cagataycali</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-envelope-open fa-2x"> cagataycali@icloud.com</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Deniz Ök -->
-      <section>
-        <section data-background="/slayt/images/deniz_ok.jpeg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Deniz </span>Ök</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Deniz Ök Kimdir?</h2>
-          <blockquote>
-            &ldquo;Spor yapmayı seven, astronomi tutkunu, kodlamayı seven bir kişi&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>HTML&CSS</li>
-          <li>JavaScript&React</li>
-          <li>Futbol takipçisi</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-telegram fa-2x"> @denizok2020</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-github fa-2x"> @DenizOk20 </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-instagram fa-2x"> @denizok2020 </i><br> &nbsp;&nbsp; <br>
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Duru Aydoğdu -->
-      <section>
-        <section data-background="/slayt/images/duruaydogdu.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Duru </span>Aydoğdu</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Duru Aydoğdu Kimdir?</h2>
-          <blockquote>
-            &ldquo;Hayatı dolu dolu yaşamayı ve kendini geliştirmeyi hedef edinmiş biri.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Flutter Development</li>
-          <li>iOS Development</li>
-          <li>UI/UX Design</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @druaydogdu</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-twitter fa-2x"> @druaydogdu</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-linkedin-square fa-2x"> @duruaydogdu </i>&nbsp;&nbsp; <br><br>
-              <i class="fa fa-github fa-2x"> @duruaydogdu</i> &nbsp;&nbsp; <br><br>
-              <i class="fa fa-telegram fa-2x"> @duruaydogdu</i>&nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Elif Bihter Kuşçu -->
-      <section>
-        <section data-background="/slayt/images/elifbihter2.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Elif Bihter </span>Kuşçu</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Elif Bihter Kuşçu Kimdir?</h2>
-          <blockquote>
-            &ldquo;Gezmeyi Seven, 35.5, Film & Dizi Seven Sıradan Biri&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>HTML/CSS</li>
-          <li>Go</li>
-          <li>Unity</li>
-          <li>Dizi & Film</li>
-          <li>Kahve</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @bihterkuscu</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @bihterkuscu</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @BihterKuscu</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Elifnur Bulut -->
-      <section>
-        <section data-background="/slayt/images/elifnur_bulut.jpg" data-background-size="contain">
-          <h2 style="margin-top:-260px"><span style="color:#ffc000"> Elifnur </span> Bulut </h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Elifnur Bulut Kimdir?</h2>
-          <blockquote>
-            &ldquo; Mobil uygulama geliştiricisi, alışveriş bağımlısı, cat person 😸 &rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Moda</li>
-          <li>Html-CSS</li>
-          <li>JavaScript</li>
-          <li>ReactNative</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-github fa-2x"> @elifbulut </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-instagram fa-2x"> @el.bulut </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-linkedin-square fa-2x"> @elifnurbulut </i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Enes Kaya -->
-      <section>
-        <section data-background="/slayt/images/eneskaya.jpeg" data-background-size="contain">
-          <h2 style="margin-top:-200px;color:#ffc000">Enes <span style="color:#ffffff">Kaya</span></h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Enes Kaya Kimdir?</h2>
-          <blockquote>
-            &ldquo;Kendimi geliştirmeyi, yeni şeyler denemeyi ve öğrenmeyi severim. &rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Web Uygulamaları</li>
-          <li>JavaScript</li>
-          <li>Golang</li>
-          <li>GNU/Linux</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-github fa-2x"> @eneskaya12</i> &nbsp;&nbsp;<br><br>
-              <i class="fa fa-instagram fa-2x"> @enskayaa_</i> &nbsp;&nbsp;<br><br>
-              <i class="fa fa-twitter fa-2x"> @eneskay_</i> &nbsp;&nbsp;<br><br>
-              <i class="fa fa-telegram fa-2x"> @eneskaya25</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <blockquote>
-            &ldquo;<a href="https://enes.wtf" style="color: white;">enes.wtf</a>&rdquo;
-          </blockquote>
-        </section>
-      </section>
-
-      <!-- Emrullah Cirit -->
-      <section>
-        <section data-background="/slayt/images/emrullahcirit.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000">Emrullah <span style="color:#ffffff">Cirit</span></h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Emrullah Cirit Kimdir?</h2>
-          <blockquote>
-            &ldquo;Müzik dinlemeyi, yabancı dizi ve Formula 1 yarışlarını izlemeyi seven bir insan, ara sıra kahvelere
-            de ilgi duyar&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>DevOps</li>
-          <li>GNU/Linux</li>
-          <li>Jenkins</li>
-          <li>Kubernetes</li>
-          <li>Docker</li>
-          <li>Python</li>
-          <li>Formula 1</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @Iamemrullah</i><br> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @emrullahcirit</i><br> &nbsp;&nbsp;
-              <i class="fa fa-instagram fa-2x"> @emrullah.cirit</i> &nbsp;&nbsp;
-            </small>
-          </p>
+          <h2 class="retirees-title">Emekliler</h2>
+          <div class="retirees-grid">
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/sezgi_altan.jpg" alt="Sezgi Altan fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Sezgi Altan</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-github"></i> @szqii</span>
+                  <span><i class="fa fa-twitter"></i> @sezgiwtf</span>
+                  <span><i class="fa fa-instagram"></i> @sezgi.wtf</span>
+                  <span><i class="fa fa-link"></i> sezgi.wtf</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+            <article class="retiree-card">
+              <img class="retiree-photo" src="/slayt/images/ufukcan_kurt3.jpeg" alt="Ufuk Can Kurt fotoğrafı">
+              <div>
+                <h3 class="retiree-name">Ufuk Can Kurt</h3>
+                <div class="retiree-contact">
+                  <span><i class="fa fa-instagram"></i> @ufukcankurt_</span>
+                  <span><i class="fa fa-github"></i> @ufukcankurt</span>
+                  <span><i class="fa fa-telegram"></i> @ufukcankurt</span>
+                </div>
+                <!-- <p class="retiree-work"><i class="fa fa-briefcase"></i> Çalıştığı yer: </p> -->
+              </div>
+            </article>
+          </div>
         </section>
       </section>
-
-      <!-- Erdem OFLAZ -->
-      <section>
-        <section data-background="/slayt/images/erdem_oflaz.jpg" data-background-size="contain">
-          <h2><span style="color:#ffc000">Erdem </span>Oflaz</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Erdem OFLAZ Kimdir?</h2>
-          <blockquote>
-            &ldquo;Sıradan bir insan&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Web / Mobile App Development</li>
-          <li>Web Application Security</li>
-          <li>Ruby On Rails</li>
-          <li>Laravel</li>
-          <li>JavaScript</li>
-          <li>UI / UX Design</li>
-          <li>SEO</li>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">TR ZAFİYETLERİ</span></h2>
-          <li>HaberTürk</li>
-          <li>HaberAy</li>
-          <li>Uludağ Sözlük</li>
-          <li>Ekşi Sözlük</li>
-          <li>İnci Caps</li>
-          <li>İnci Sözlük</li>
-          <li>Yalı Spor</li>
-          <li>FLO</li>
-        </section>
-
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> </i> &nbsp;&nbsp;
-              <i class="fa fa-instagram fa-2x"> </i> &nbsp;&nbsp;
-              <i class="fa fa-facebook fa-2x"> e2d3m </i> &nbsp;&nbsp;
-              <br><br><br>
-              <i class="fa fa-github fa-2x"> erdemoflaz</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-envelope-open fa-2x"> info@erdemoflaz.com</i> &nbsp;&nbsp;
-            </small>
-            <br>
-            <br>
-            <small>
-              <i class="fa fa-heart fa-2x"> erdemoflaz.com</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Faruk Özdemir -->
-      <section>
-        <section data-background="/slayt/images/farukozdemir.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Faruk </span>Özdemir</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Faruk Özdemir Kimdir?</h2>
-          <blockquote>
-            &ldquo;Teknolojiye ve Tarihe Meraklı, Okumayı ve Araştırmayı Seven Bir Kişi.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>Ruby</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @fozdemir16</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @fozdemir16</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @fozdemir16</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Feyza Eda Türk -->
-      <section>
-        <section data-background="/slayt/images/feyzaedaturk.jpg" data-background-size="contain">
-          <h2 style="margin-top:-260px"><span style="color:#ffc000"> Feyza Eda </span> Türk </h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Feyza Eda Türk Kimdir?</h2>
-          <blockquote>
-            &ldquo;Android Dev, Yemek Yemeyi, Alışveriş Yapmayı, Gezmeyi, Mangalı Seven &rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Android</li>
-          <li>Flutter</li>
-          <li>Java</li>
-          <li>Halk Oyunları</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @feyzaedaturk </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-github fa-2x"> @feyzaeda </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-instagram fa-2x"> @fetfeyzaeda </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-linkedin-square fa-2x"> @feyzaedaturk </i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Feyzi Yuşa KARABABA -->
-      <section>
-        <section data-background="/slayt/images/yusa_karababa.jpg" data-background-size="contain">
-          <h2><span style="color:#ffc000"> Feyzi </span>Yuşa<span style="color:#ffc000"> KARABABA </span></h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Feyzi Yuşa Karababa Kimdir?</h2>
-          <blockquote>
-            &ldquo;PaüSiber'in ilk başkanı. Havelsan firmasında
-            çalışıyorum. Kendini geliştirmeyi seven, ileride siber güvenlik uzmanı olmak isteyen kişi. (oldu ✔️)&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Siber Güvenlik</li>
-          <li>Reverse Engineering</li>
-          <li>PHP</li>
-          <li>Python</li>
-          <li>Network</li>
-          <li>Assembly</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @fykarababa</i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @Fykarababa</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-envelope-open fa-2x"> yusakarababa@gmail.com</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Furkan Dolunay -->
-      <section>
-        <section data-background="/slayt/images/furkandolunay.jpg" data-background-size="contain">
-          <h2 style="margin-top:-260px"><span style="color:#ffc000"> Furkan </span>Dolunay</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Furkan Dolunay Kimdir?</h2>
-          <blockquote>
-            &ldquo;Backend Dev, Grafiker, Fotoğrafçı, sporla ilgilenen biriyim.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Backend</li>
-          <li>Robotik</li>
-          <li>Grafik tasarım</li>
-          <li>Video editleme</li>
-          <li>Fotoğrafçılık</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @makerologist_</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-github fa-2x"> @Makerologist0</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-instagram fa-2x"> @makerologist_ </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-linkedin-square fa-2x"> @furkan-dolunay</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Gürkan ŞEN -->
-      <section>
-        <section data-background="/slayt/images/gurkan_sen.jpg" data-background-size="contain">
-          <h2 style="margin-top: 500px"><span style="color:#ffc000;">Gürkan </span>ŞEN</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Gürkan Şen Kimdir?</h2>
-          <blockquote>
-            &ldquo;Justlife şirketinde Senior Frontend Engineer.&rdquo; <br>
-            &ldquo;Ex: Kommunity.com'da Product Manager.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Frontend</li>
-          <li>ReactNative</li>
-          <li>Vue</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @gurkansenn</i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @gurkansen</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-envelope-open fa-2x"> gurkan.sen35@gmail.com</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Hamdiye Kaya -->
-      <section>
-        <section data-background="/slayt/images/hamdiye_kaya.jpeg" data-background-size="contain">
-          <h2>Hamdiye <span style="color:#ffc000">KAYA</span></h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Hamdiye Kaya Kimdir?</h2>
-          <blockquote>
-            &ldquo;Bilgisayar Mühendisi. Kendimi geliştirip, bir şeyler yapabilmek için
-            uğraşıyorum.Aynı zamanda bir şirkette yazılım geliştirici olarak çalışıyorum.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>Ruby on Rails</li>
-          <li>Halk Oyunları</li>
-          <li>Flüt</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-github fa-2x">@hamdiye</i> &nbsp;&nbsp;
-            </small>
-          </p>
-          <p>
-            <small>
-              <i class="fa fa-envelope-open fa-2x"> hamdyekaya@gmail.com</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Hasan Tezcan -->
-      <section>
-        <section data-background="/slayt/images/hasantezcan.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Hasan </span>Tezcan</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Hasan Tezcan Kimdir?</h2>
-          <blockquote>
-            &ldquo;<a href="https://hasantezcan.dev" style="color: white;">https://hasantezcan.dev</a>&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <p>
-            <i>JavaScript</i><br>
-            <i>ReactJS</i><br>
-            <i>NodeJS</i><br>
-            <i>GNU/Linux 🐧</i><br>
-            <i>Bilişim Hukuku 🖥️⚖️</i><br>
-          </p>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <a href="https://twitter.com/hasantezcann" style="color: white;"><i class="fa fa-twitter fa-2x">
-                  hasantezcann</i></a>&nbsp;&nbsp; <br><br>
-              <a href="https://www.github.com/hasantezcan" style="color: white;"><i class="fa fa-github fa-2x">
-                  hasantezcan</i></a> &nbsp;&nbsp; <br><br>
-              <a href="https://www.youtube.com/hasantezcan" style="color: white;"><i class="fa fa-youtube fa-2x">
-                  hasantezcan</i></a>
-            </small>
-          </p>
-          <blockquote>
-            &ldquo;<a href="https://hasantezcan.dev" style="color: white;">https://hasantezcan.dev</a>&rdquo;
-          </blockquote>
-        </section>
-      </section>
-
-      <!-- Havva Nur Durudeniz -->
-      <section>
-        <section data-background="/slayt/images/havvanurdurudeniz.JPG" data-background-size="contain">
-          <h2 style="margin-top:-345px;color:#ffffff"><span style="color:#ffc000"> Havva Nur</span><br> Durudeniz</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Havva Nur Durudeniz Kimdir?</h2>
-          <blockquote>
-            &ldquo; Yeni yerler keşfetmeyi ve müzik dinlemeyi seven, alışveriş bağımlısı, kedici bir insan. &rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Golang</li>
-          <li>Docker</li>
-          <li>Tenis</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-github fa-2x"> @hdrdnz</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-instagram fa-2x"> @havvanurdrdnz</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-telegram fa-2x"> @havvanurdrdnz</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Hazal Sıla Yaprak -->
-      <section>
-        <section data-background="/slayt/images/hazalsilayaprak.jpg" data-background-size="contain">
-          <h2 style="margin-top:-330px"><span style="color:#ffc000"> Hazal Sıla </span>Yaprak</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Hazal Sıla Yaprak Kimdir?</h2>
-          <blockquote>
-            &ldquo;Front-end Dev👩🏻‍💻, Hamarat🍲, Müzik Sever🎧, Domestic🏠, Kedici😻&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <ul>
-            <li>Front-end💻</li>
-            <li>VueJS</li>
-            <li>Tasarım🖌</li>
-            <li>Sanat🎤🎭</li>
-          </ul>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> @hazalsilayaprak</i> &nbsp;&nbsp; <br><br>
-              <i class="fa fa-github fa-2x"> @hazalsilayaprak</i> &nbsp;&nbsp; <br><br>
-              <i class="fa fa-instagram fa-2x"> @hazalsilayaprak </i> &nbsp;&nbsp; <br><br>
-              <i class="fa fa-gitlab fa-2x"> @hazalsilayaprak</i> <br><br>
-            </small>
-          </p>
-        </section>
-      </section>
-		
-      <!-- Işınnur Günay -->
-      <section>
-        <section data-background="/slayt/images/isinnur_gunay.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Işınnur </span>Günay</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Işınnur Günay Kimdir?</h2>
-          &ldquo;Müzikle ilgilenen,film izlemeyi ve oyun oynamayı seven biriyim.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Frontend Development</li>
-          <li>JavaScript</li>
-          <li>ReactJS</li>
-          <li>NextJS</li>
-          <li>NodeJS</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @isinnurgunay</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @isinnur</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @isinnur</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-linkedin-square fa-2x"> @isinnurgunay</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- İlknur Doğan -->
-      <section>
-        <section data-background="/slayt/images/ilknurdogan.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> İlknur </span>Doğan</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">İlknur Doğan Kimdir?</h2>
-          <blockquote>
-            &ldquo;Yeni şeyler deneyimlemeyi, öğrenmeyi seven biriyim.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>JavaScript</li>
-          <li>ReactJS</li>
-          <li>NodeJs</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-github fa-2x"> @ilknurdgn</i> &nbsp;&nbsp;<br><br>
-              <i class="fa fa-linkedin-square fa-2x"> @ilknurdogan</i> &nbsp;&nbsp; <br><br>
-              <i class="fa fa-instagram fa-2x"> @ilknur.ddogan_</i> &nbsp;&nbsp;<br><br>
-              <i class="fa fa-twitter fa-2x"> ddilknurdgn</i> &nbsp;&nbsp;<br><br>
-              <i class="fa fa-telegram fa-2x"> @ilknurdgn</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Mehmet Rahmi YüceöZ -->
-      <section>
-        <section data-background="/slayt/images/mehmet_yuceoz.jpg" data-background-size="contain">
-          <h2 style="margin-top:+600px"><span style="color:#ffc000"> Mehmet </span>Rahmi<span style="color:#ffc000">
-              Yüceöz </span></h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Mehmet Rahmi Yüceöz Kimdir?</h2>
-          <blockquote>
-            &ldquo;Gömülü sistem ve robot meraklısı, Python aşığı, Az bir şey de C Lang sever.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Python 🐍</li>
-          <li>Elektrik-Elektronik Uygulamalar</li>
-          <li>Robotik</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-telegram fa-2x">@MrYcz</i> &nbsp;&nbsp;<br><br>
-              <i class="fa fa-instagram fa-2x">@yuceozmehmet</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Murat Tanrıverdi -->
-      <section>
-        <section data-background="/slayt/images/murat-tanriverdi.jpg" data-background-size="contain">
-          <h2 style="margin-top:-350px"><span style="color:#ffc000"> Murat </span>Tanrıverdi</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Murat Tanrıverdi Kimdir?</h2>
-          <blockquote>
-            &ldquo;Backend Dev, gezmeyi, kahveyi, kod yazmayı seven ve sürekli teknoloji değiştiren dümdüz insan.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-
-          <li>Flutter-React Native</li>
-          <li>Symfony</li>
-          <li>Java Spring Boot</li>
-          <li>ReactJS </li>
-          <li>Futbol &#x26BD;</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> <a href="https://twitter.com/muratcandev" target="_blank"
-                  style="color:#fff"> @muratcandev</a></i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-github fa-2x"> <a href="https://github.com/murattanriverdi" target="_blank"
-                  style="color:#fff"> @murattanriverdi</a></i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-instagram fa-2x"> <a href="https://www.instagram.com/muratcan.tanriverdi" target="_blank"
-                  style="color:#fff"> @muratcan.tanriverdi</a> </i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-linkedin-square fa-2x"> <a href="https://www.linkedin.com/in/murat-tanriverdi"
-                  target="_blank" style="color:#fff"> @murat-tanriverdi</a></i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Onur Özbay -->
-      <section>
-        <section data-background="/slayt/images/onurozbay.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Onur </span>Özbay</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Onur Özbay Kimdir?</h2>
-          <blockquote>
-            &ldquo;Software Engineer @Trendyol, Ex: Türkiye Sigorta
-            <br>
-            Full-Stack Engineer, Antakyalı, Gamer, Nolan filmlerini ve futbolu çok sever.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Go, Java, Spring Boot</li>
-          <li>React JS, Flutter</li>
-          <li>Kubernetes, Docker</li>
-          <li>Bilim Kurgu</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @onurozbay7</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @onurozbay7</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-github fa-2x"> @onurozbay7</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-twitter fa-2x"> @ozzieonur</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Osman Emre Ömürlü -->
-      <section>
-        <section data-background="/slayt/images/osman-emre-omurlu.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Osman Emre </span>Ömürlü</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Osman Emre Ömürlü Kimdir?</h2>
-          <blockquote>
-            &ldquo;Kendini geliştirmeye çok hevesli,<br> iOS Developer olmak isteyen biri.<br> (oldu ✨)&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <p>
-            <i>iOS Development </i><br>
-            <i>Swift ✨</i><br>
-          </p>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <a href="https://instagram.com/oe.omurlu" style="color: white;"><i class="fa fa-instagram fa-2x">
-                  oe.omurlu</i></a>&nbsp;&nbsp; <br><br>
-              <a href="https://www.linkedin.com/in/oemurlu/" style="color: white;"><i
-                  class="fa fa-linkedin-square fa-2x">
-                  oemurlu</i></a> &nbsp;&nbsp; <br><br>
-              <a href="https://twitter.com/oemurlu" style="color: white;"><i class="fa fa-twitter fa-2x">
-                  oemurlu</i></a>&nbsp;&nbsp; <br><br>
-              <a href="https://www.github.com/oemurlu" style="color: white;"><i class="fa fa-github fa-2x">
-                  oemurlu</i></a> &nbsp;&nbsp; <br><br>
-            </small>
-          </p>
-          <blockquote>
-            &ldquo;<a href="https://oemurlu.dev" style="color: white;">oemurlu.dev</a>&rdquo;
-          </blockquote>
-        </section>
-      </section>
-
-      <!-- Ömer Faruk Birgül -->
-      <section>
-        <section data-background="/slayt/images/omerfarukbirgul.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Ömer Faruk </span>Birgül</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Ömer Faruk Birgül Kimdir?</h2>
-          <blockquote>
-            &ldquo;console.log("Hello World!") <br>Pop kültür Geek'i, eğlenceyi sever, bazen de kod yazar.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-          <li>Java</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @omer_f_birgul</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @Omar-f-Birgul</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @omar_f_birgul</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Remzi Dalyan -->
-      <section>
-        <section data-background="/slayt/images/remzi_dalyan.jpg" data-background-size="contain">
-          <h2><span style="color:#ffc000">Remzi </span>DALYAN</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Remzi Dalyan Kimdir?</h2>
-          <blockquote>
-            &ldquo;Backend Dev, Kodlamayı, Oyun Oynamayı Seven&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Web Applications</li>
-          <li>Laravel</li>
-          <li>Python</li>
-          <li>Javascript</li>
-          <li>NodeJS</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-twitter fa-2x"> </i> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> RemziDalyan </i> &nbsp;&nbsp;
-              <br><br><br>
-              <i class="fa fa-instagram fa-2x"> </i> &nbsp;&nbsp;
-              <i class="fa fa-telegram fa-2x"> remzidalyan</i> &nbsp;&nbsp;
-              <br><br><br>
-              <i class="fa fa-envelope-open fa-2x"> rdalyan@outlook.com</i> &nbsp;&nbsp; <br><br><br>
-              <i class="fa fa-envelope-open fa-2x"> remzidalyan@icloud.com</i> &nbsp;&nbsp; <br><br>
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Semanur Özkan -->
-      <section>
-        <section data-background="/slayt/images/semanur_ozkan.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Semanur </span><br>ÖZKAN</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Semanur Özkan Kimdir?</h2>
-          <blockquote>
-            &ldquo;Çizim yapmayı, müzik dinlemeyi ve kitap okumayı seven biri.&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>HTML-CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @sema.ozkan_</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @semaozkan</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @semanurozkan</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Serdar Kış -->
-      <section>
-        <section data-background="/slayt/images/serdarkis.jpg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Serdar </span>Kış</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Serdar Kış Kimdir?</h2>
-          <blockquote>
-            &ldquo;Filmler, Oyunlar ve Uyku&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>ReactJS, NodeJS</li>
-          <li>Flutter ile Mobil</li>
-          <li>Dizi-Film-Oyun</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-telegram fa-2x"> @Serdarks</i><br> &nbsp;&nbsp;
-              <i class="fa fa-github fa-2x"> @serdarkis</i> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
-      <!-- Sezgi Altan -->
-      <section>
-        <section data-background="/slayt/images/sezgi_altan.jpg" data-background-size="contain">
-          <h2 style="margin-top:+600px"><span style="color:#ffc000">Sezgi </span>ALTAN</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Sezgi Altan Kimdir?</h2>
-          <blockquote>
-            &ldquo;Frontend Dev, UI Designer, Gamer&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>Web Development</li>
-          <li>Javascript</li>
-          <li>UI Design</li>
-          <li>React.js</li>
-          <li>Sitcom</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <a href="https://www.github.com/Szqii" style="color: white;"><i class="fa fa-github fa-2x">
-                  @szqii</i></a> &nbsp;&nbsp; <br><br>
-              <a href="https://twitter.com/sezgiwtf" style="color: white;"><i class="fa fa-twitter fa-2x">
-                  @sezgiwtf</i></a>&nbsp;&nbsp; <br><br>
-              <a href="https://www.instagram.com/sezgi.wtf/" style="color: white;"><i class="fa fa-instagram fa-2x">
-                  @sezgi.wtf</i></a> <br><br>
-              <a href="https://sezgi.wtf/" style="color: white;"><i class="fa fa-link fa-2x">
-                  sezgi.wtf</i></a>
-            </small>
-          </p>
-        </section>
-      </section>
-      
-      <!-- Ufuk Can Kurt -->
-      <section>
-        <section data-background="/slayt/images/ufukcan_kurt3.jpeg" data-background-size="contain">
-          <h2 style="margin-top:-322px;color:#ffc000"><span style="color:#ffffff"> Ufuk Can </span>Kurt</h2>
-        </section>
-        <section>
-          <h2 style="color:#ffc000">Ufuk Can Kurt Kimdir?</h2>
-          <blockquote>
-            &ldquo;Frontend Dev, Kitap Okumayı ve Oyun Oynamayı Seven Biri&rdquo;
-          </blockquote>
-        </section>
-        <section>
-          <h2><span style="color:#ffc000">İlgi Alanları</span></h2>
-          <li>JavaScript</li>
-          <li>ReactJS</li>
-          <li>VueJS</li>
-          <li>NodeJS</li>
-          <li>Spor</li>
-          <li>Kitap Kurdu 📚</li>
-        </section>
-        <section>
-          <h2> <span style="color:#ffc000">İletişim</span></h2>
-          <p>
-            <small>
-              <i class="fa fa-instagram fa-2x"> @ufukcankurt_</i> &nbsp;&nbsp; <br> <br>
-              <i class="fa fa-github fa-2x"> @ufukcankurt</i><br> &nbsp;&nbsp; <br>
-              <i class="fa fa-telegram fa-2x"> @ufukcankurt</i><br> &nbsp;&nbsp;
-            </small>
-          </p>
-        </section>
-      </section>
-
 
       <!-- Hangi Etkinlikleri Düzenledik ? -->
       <section>
